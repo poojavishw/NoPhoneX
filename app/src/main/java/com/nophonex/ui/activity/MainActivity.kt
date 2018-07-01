@@ -29,6 +29,7 @@ class MainActivity : Base(), TimerTaskSync.TimerCallback, View.OnClickListener {
 
     private fun setListeners() {
         tv_tasks.setOnClickListener(this)
+        tv_tasks.setOnClickListener(this)
         tv_call.setOnClickListener(this)
         tv_settings.setOnClickListener(this)
         tv_feedback.setOnClickListener(this)
