@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "696776401051",
+    "firebase_url": "https://nophonex-208515.firebaseio.com",
+    "project_id": "nophonex-208515",
+    "storage_bucket": "nophonex-208515.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696776401051:android:e9e3e296147f37cc",
+        "android_client_info": {
+          "package_name": "com.nophonex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696776401051-uv4f6ecluko7u824bpmgjvvado1a3cs5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2k1oSQVNzASSBrR9UDaWfhf8jfnHsDMA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

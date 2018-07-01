@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dp_40"
+    android:paddingRight="@dimen/dp_40"
+    android:background="?attr/app_bg"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.activity.CallActivity">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_50"
+        android:text="21 Jun, 2018"
+        android:textColor="?attr/textColor"
+        android:textSize="@dimen/sp_15" />
+
+    <TextView
+        android:id="@+id/tv_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="@string/call"
+        android:textColor="?attr/textColor"
+        android:textSize="@dimen/sp_30" />
+
+    <EditText
+        android:id="@+id/et_call"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_call"
+        android:layout_marginTop="@dimen/dp_20"
+        android:hint="@string/call_number"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColorHint="?attr/textColor"
+        android:textColor="?attr/textColor">
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_loading_contact_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_call"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/loading_contact_msg"
+        android:textColor="?attr/textColor"
+        android:visibility="gone"
+        android:textSize="@dimen/sp_15" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcl_contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_make_call"
+        android:layout_below="@+id/et_call"
+        android:layout_marginTop="@dimen/dp_20" />
+
+    <TextView
+        android:id="@+id/tv_make_call"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="?attr/textColor"
+        android:padding="5dp"
+        android:text="@string/call"
+        android:textAlignment="center"
+        android:textColor="?attr/app_bg"
+        android:textSize="@dimen/sp_20" />
+
+
+</RelativeLayout>

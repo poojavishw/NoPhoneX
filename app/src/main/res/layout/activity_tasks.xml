@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dp_50"
+    android:background="?attr/app_bg"
+    tools:context=".ui.activity.TasksActivity">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_50"
+        android:text="21 Jun, 2018"
+        android:textColor="?attr/textColor"
+        android:textSize="@dimen/sp_15" />
+
+    <TextView
+        android:id="@+id/tv_tasks"
+        android:layout_below="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tasks"
+        android:textColor="?attr/textColor"
+        android:layout_marginTop="@dimen/dp_40"
+        android:textSize="@dimen/sp_30" />
+
+    <EditText
+        android:id="@+id/et_todo_task"
+        android:layout_below="@+id/tv_tasks"
+        android:layout_width="300dp"
+        android:hint="@string/enter_todo_task"
+        android:textColorHint="?attr/textColor"
+        android:textColor="?attr/textColor"
+        android:layout_marginTop="@dimen/dp_20"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcl_tasks"
+        android:layout_below="@+id/et_todo_task"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

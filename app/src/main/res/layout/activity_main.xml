@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/dp_50"
+    android:background="?attr/app_bg"
+    tools:context="com.nophonex.ui.activity.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_50"
+        android:text="21 Jun, 2018"
+        android:textColor="?attr/textColor"
+        android:textSize="@dimen/sp_15" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tasks"
+            android:textColor="?attr/textColor"
+            android:textSize="@dimen/sp_30" />
+
+        <TextView
+            android:id="@+id/tv_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tasks"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/call"
+            android:textColor="?attr/textColor"
+            android:textSize="@dimen/sp_30" />
+
+        <TextView
+            android:id="@+id/tv_directions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_call"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/directions"
+            android:textColor="?attr/textColor"
+            android:textSize="@dimen/sp_30" />
+
+        <TextView
+            android:id="@+id/tv_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_directions"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/settings"
+            android:textColor="?attr/textColor"
+            android:textSize="@dimen/sp_30" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:text="Feedback"
+        android:textColor="?attr/textColor"
+        android:textSize="@dimen/sp_15" />
+
+</RelativeLayout>
